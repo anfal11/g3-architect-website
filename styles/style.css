@@ -85,13 +85,13 @@ font-weight: 700;
 
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 5rem auto;
 }
 
 /* Team features section */
 
 .team-container{
-    padding: 5rem 5rem;
+    margin: 0 80px;
     display: flex;
     align-items: center;
 }
@@ -99,6 +99,10 @@ main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+    margin-left: 5.75rem;
+}
+.image-content >img{
+    width: 15.625rem;
 }
 .team-content{
     padding-left: 4rem;
@@ -127,7 +131,7 @@ padding-bottom: 1rem;
 
 /* Responsive Design using tailwin breakpoints */
 /* https://tailwindcss.com/docs/responsive-design */
-/* Header Design */
+/*Design for small devices*/
 @media screen and (max-width: 640px) {
     nav{
   flex-direction: column;
@@ -137,7 +141,30 @@ padding-bottom: 1rem;
     font-size: 2.8rem;
     font-weight: 700;
     }
+    .team-container {
+        flex-direction: column;
+    }
+
+    .of-our, .quick-list, .team-content h1 {
+        font-size: 1.8rem;
+    }
+    .team-content {
+        padding-left: 1rem;
+        text-align: center;
+    }
+    .team-content h1{
+        padding-top: 2rem;
+    }
+
+    .image-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .image-content{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
 }
+/* Design for medium devices*/
 @media screen and (min-width: 640px) and (max-width: 768px) {
     nav{
   flex-direction: column;
@@ -147,4 +174,46 @@ padding-bottom: 1rem;
     font-size: 2.8rem;
     font-weight: 700;
     }
+    .team-container {
+        flex-direction: column;
+    }
+
+    .of-our, .quick-list, .team-content h1 {
+        font-size: 1.8rem;
+    }
+    .team-content {
+        padding-left: 1rem;
+        text-align: center;
+    }
+    .team-content h1{
+        padding-top: 2rem;
+    }
+
+    .image-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .image-content{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+/* Design for large devices*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+   
+    .team-container {
+        flex-direction: column;
+    }
+
+    .of-our, .quick-list, .team-content h1 {
+        font-size: 1.8rem;
+    }
+    .team-content {
+        padding-left: 1rem;
+        text-align: center;
+    }
+    .team-content h1{
+        padding-top: 2rem;
+    }
+
 }

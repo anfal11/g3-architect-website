@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 
-.btn-primary{
+.btn-primary {
     background: #FF900E;
     color: #fff;
     padding: 10px 20px;
@@ -21,178 +21,255 @@
     text-align: center;
     padding: 15px;
 }
+
 /* Header styles */
 header {
     background: rgba(255, 144, 14, 0.10);
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 30px;
 }
-.nav-title{
-    color:  #131313;
-font-size: 2.8rem;
-font-weight: 700;
+
+.nav-title {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
 }
-nav > ul{
+
+nav>ul {
     display: flex;
 }
+
 nav li {
     list-style: none;
     padding: 1rem 1rem;
 }
 
-nav li a{
+nav li a {
     text-decoration: none;
     color: #424242;
-font-size: 1rem;
-font-weight: 500;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
-h3{
+h3 {
     padding-top: 1rem;
 }
 
 /* Banner section style  */
-.banner{
+.banner {
     margin-top: 80px;
     padding-bottom: 50px;
     max-width: 900px;
     margin: 0 auto;
 }
-.banner-content{
-     text-align: center;
+
+.banner-content {
+    text-align: center;
     padding-bottom: 2rem;
     padding-top: 2rem;
 }
-.banner-title{
-    color:  #131313;
-margin-bottom: 10px;
-font-size: 4rem;
-font-weight: 700;
+
+.banner-title {
+    color: #131313;
+    margin-bottom: 10px;
+    font-size: 4rem;
+    font-weight: 700;
 }
-.banner-description{
+
+.banner-description {
     color: #727272;
     margin-bottom: 10px;
     font-size: 1rem;
     font-weight: 400;
 }
-.banner img{
+
+.banner img {
     width: 100%;
 }
 
-main{
+main {
     max-width: 1440px;
     margin: 5rem auto;
 }
 
 /* Team features section */
 
-.team-container{
+.team-container {
     margin: 0 80px;
     display: flex;
     align-items: center;
 }
-.image-content{
+
+.image-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     margin-left: 5.75rem;
 }
-.image-content >img{
+
+.image-content>img {
     width: 15.625rem;
 }
-.team-content{
+
+.team-content {
     padding-left: 4rem;
 }
 
-.quick-list{
+.quick-list {
     color: #727272;
-font-size: 2.8rem;
-font-weight: 500;
+    font-size: 2.8rem;
+    font-weight: 500;
 }
-.of-our{
-    color: #131313;
-font-size: 2.8rem;
-font-weight: 700;
-}
-.team-content h1{
-    color: #FF900E;
-font-size: 2.8rem;
-font-weight: 700;
-padding-bottom: 1rem;
-}
-.team-content p{
 
-padding-bottom: 1rem;
+.of-our {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.team-content h1 {
+    color: #FF900E;
+    font-size: 2.8rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.team-content p {
+    padding-bottom: 1rem;
+}
+
+/* Facts style */
+.facts-container {
+    max-width: 37.5rem;
+    padding-top: 7rem;
+    margin-left: 10rem;
+}
+
+.facts-container h3 {
+    color: #131313;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
+
+.facts-container p {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.facts-card-container {
+    padding-top: 6rem;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 6rem;
+}
+
+.facts-card-container .cards {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 30px 30px;
+    text-align: center;
+}
+
+.card-stats {
+    color: #424242;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.card-title {
+    color: #727272;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 /* Responsive Design using tailwin breakpoints */
 /* https://tailwindcss.com/docs/responsive-design */
 /*Design for small devices*/
 @media screen and (max-width: 640px) {
-    nav{
-  flex-direction: column;
+    nav {
+        flex-direction: column;
     }
-    .nav-title{
-        color:  #131313;
-    font-size: 2.8rem;
-    font-weight: 700;
+
+    .nav-title {
+        color: #131313;
+        font-size: 2.8rem;
+        font-weight: 700;
     }
+
     .team-container {
         flex-direction: column;
     }
 
-    .of-our, .quick-list, .team-content h1 {
+    .of-our,
+    .quick-list,
+    .team-content h1 {
         font-size: 1.8rem;
     }
+
     .team-content {
         padding-left: 1rem;
         text-align: center;
     }
-    .team-content h1{
+
+    .team-content h1 {
         padding-top: 2rem;
     }
 
     .image-content {
         grid-template-columns: repeat(1, 1fr);
     }
-    .image-content{
+
+    .image-content {
         max-width: 1000px;
         margin: 0 auto;
     }
 }
+
 /* Design for medium devices*/
 @media screen and (min-width: 640px) and (max-width: 768px) {
-    nav{
-  flex-direction: column;
+    nav {
+        flex-direction: column;
     }
-    .nav-title{
-        color:  #131313;
-    font-size: 2.8rem;
-    font-weight: 700;
+
+    .nav-title {
+        color: #131313;
+        font-size: 2.8rem;
+        font-weight: 700;
     }
+
     .team-container {
         flex-direction: column;
     }
 
-    .of-our, .quick-list, .team-content h1 {
+    .of-our,
+    .quick-list,
+    .team-content h1 {
         font-size: 1.8rem;
     }
+
     .team-content {
         padding-left: 1rem;
         text-align: center;
     }
-    .team-content h1{
+
+    .team-content h1 {
         padding-top: 2rem;
     }
 
     .image-content {
         grid-template-columns: repeat(1, 1fr);
     }
-    .image-content{
+
+    .image-content {
         max-width: 1000px;
         margin: 0 auto;
     }
@@ -200,19 +277,23 @@ padding-bottom: 1rem;
 
 /* Design for large devices*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-   
+
     .team-container {
         flex-direction: column;
     }
 
-    .of-our, .quick-list, .team-content h1 {
+    .of-our,
+    .quick-list,
+    .team-content h1 {
         font-size: 1.8rem;
     }
+
     .team-content {
         padding-left: 1rem;
         text-align: center;
     }
-    .team-content h1{
+
+    .team-content h1 {
         padding-top: 2rem;
     }
 

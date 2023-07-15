@@ -163,22 +163,25 @@ main {
     font-weight: 400;
 }
 
+
 .facts-card-container {
     padding-top: 6rem;
     display: flex;
     justify-content: space-around;
-    max-width: 1000px;
-    margin: 0 auto;
-    gap: 6rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    gap: 1.25rem;
 }
 
 .facts-card-container .cards {
     border-radius: 8px;
     border: 1px solid #FF900E;
-    padding: 30px 30px;
+    padding: 20px 20px;
     text-align: center;
 }
-
+.cards{
+    width: 240px;
+}
 .card-stats {
     color: #424242;
     font-size: 2.5rem;
@@ -194,7 +197,7 @@ main {
 /* Responsive Design using tailwin breakpoints */
 /* https://tailwindcss.com/docs/responsive-design */
 /*Design for small devices*/
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 576px) {
     nav {
         flex-direction: column;
     }
@@ -232,10 +235,28 @@ main {
         max-width: 1000px;
         margin: 0 auto;
     }
+    .facts-container {
+        text-align: center;
+        margin-left: 0rem;
+    }
+
+    .facts-card-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-left: 6rem;
+    }
+    
+    .facts-card-container .cards {
+        border-radius: 8px;
+        border: 1px solid #FF900E;
+        padding: 20px 20px;
+        text-align: center;
+    }
+   
 }
 
 /* Design for medium devices*/
-@media screen and (min-width: 640px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
     nav {
         flex-direction: column;
     }
@@ -272,6 +293,9 @@ main {
     .image-content {
         max-width: 1000px;
         margin: 0 auto;
+    }
+    .facts-card-container{
+        flex-direction: column;
     }
 }
 
@@ -296,5 +320,5 @@ main {
     .team-content h1 {
         padding-top: 2rem;
     }
-
+    
 }

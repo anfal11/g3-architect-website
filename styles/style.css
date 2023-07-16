@@ -194,6 +194,46 @@ main {
     font-weight: 600;
 }
 
+/* Sponsor section */
+.sponsor-section-container{
+    margin-top: 6rem;
+}
+.sponsor-section-container .sponsor-container{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.sponsor-container h1{
+    padding-bottom: 1rem;
+    color:#131313;
+    font-size: 2.5rem;
+font-weight: 700;
+}
+.sponsor-container p{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.sponsor-image-container{
+    text-align: center;
+}
+
+.sponsor-image-container img{
+    padding-right: 4rem;
+    max-width: 200px;
+}
+
+/* Footer */
+footer{
+    border-radius: 8px;
+background: #FFF4E7;
+max-width: 1000px;
+margin: 8rem auto;
+}
+footer p{
+    text-align: center;
+    padding: 2rem;
+}
+
 /* Responsive Design using tailwin breakpoints */
 /* https://tailwindcss.com/docs/responsive-design */
 /*Design for small devices*/
@@ -252,7 +292,21 @@ main {
         padding: 20px 20px;
         text-align: center;
     }
-   
+    .cards{
+        box-shadow: 10px 10px #aba3a2;
+    }
+
+    .sponsor-image-container img{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .sponsor-image-container{
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
 }
 
 /* Design for medium devices*/
@@ -297,6 +351,20 @@ main {
     .facts-card-container{
         flex-direction: column;
     }
+    .cards{
+        box-shadow: 10px 10px #aba3a2;
+    }
+    .sponsor-image-container img{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .sponsor-image-container{
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
 }
 
 /* Design for large devices*/
@@ -319,6 +387,18 @@ main {
 
     .team-content h1 {
         padding-top: 2rem;
+    }
+
+    .sponsor-image-container img{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .sponsor-image-container{
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 1.5rem;
     }
     
 }

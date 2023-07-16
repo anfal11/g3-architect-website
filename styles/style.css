@@ -143,6 +143,70 @@ main {
     padding-bottom: 1rem;
 }
 
+/* Feature Styles */
+.features-container-main{
+padding-left: 150px;
+}
+.features-container-main h1{
+    color:  #131313;
+font-size: 2.8rem;
+font-weight: 700;
+border-left: 3px solid #FF900E;
+margin-bottom: 10px;
+padding-left: 21px;
+}
+.features-container-main p{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.features-container{
+    display: flex;
+    gap: 130px;
+    margin-top: 70px;
+}
+.feature-box{
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.feature-box h3{
+    color: #131313;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.container-main-img-feature{
+    padding-right: 240px;
+}
+.container-main-img-feature img{
+    width: 400px;
+}
+.img-btn{
+    border-radius: 8px;
+background: #FF900E;
+    padding: 20px;
+    width: 200px;
+    margin-top: 0;
+    position: relative;
+    top: -60px;
+    left: -50px;
+}
+.img-btn h3{
+    color: #FFF;
+text-align: center;
+font-size: 2rem;
+font-weight: 700;
+}
+.img-btn p{
+    color: #FFF;
+    text-align: center;
+font-size: 1rem;
+font-weight: 500;
+}
 /* Facts style */
 .facts-container {
     max-width: 37.5rem;
